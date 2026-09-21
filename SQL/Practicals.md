@@ -1,3 +1,5 @@
+# SQL Practical Practice
+
 ## General Practice Table — `Employees`
 
 ```sql
@@ -41,13 +43,13 @@ VALUES
 
 ### Basic → Advanced
 
-Try to solve these **without looking at solutions**.
+> Try to solve these **without looking at solutions**.
 
 ---
 
-## 🟢 Level 1 — Basic SQL
+# 🟢 Level 1 — Basic SQL
 
-### SELECT
+## SELECT
 
 **1.** Display all employees.
 
@@ -61,7 +63,7 @@ Try to solve these **without looking at solutions**.
 
 ---
 
-### WHERE
+## WHERE
 
 **6.** Find employees whose salary is greater than `50000`.
 
@@ -75,7 +77,7 @@ Try to solve these **without looking at solutions**.
 
 ---
 
-### AND / OR / NOT
+## AND / OR / NOT
 
 **11.** Find IT employees whose salary is greater than `55000`.
 
@@ -89,9 +91,9 @@ Try to solve these **without looking at solutions**.
 
 ---
 
-## 🟢 Level 2 — Filtering & Sorting
+# 🟢 Level 2 — Filtering & Sorting
 
-### BETWEEN / IN / LIKE
+## BETWEEN / IN / LIKE
 
 **16.** Find employees whose salary is between `45000` and `60000`.
 
@@ -109,7 +111,7 @@ Try to solve these **without looking at solutions**.
 
 ---
 
-### ORDER BY
+## ORDER BY
 
 **23.** Display employees from highest salary to lowest salary.
 
@@ -123,7 +125,7 @@ Try to solve these **without looking at solutions**.
 
 ---
 
-### LIMIT / OFFSET
+## LIMIT / OFFSET
 
 **28.** Find the highest-paid employee.
 
@@ -139,12 +141,16 @@ Try to solve these **without looking at solutions**.
 
 # 🟡 Level 3 — Aggregate Functions
 
-Practice:
+### Practice
 
 `COUNT()`
+
 `SUM()`
+
 `AVG()`
+
 `MIN()`
+
 `MAX()`
 
 **33.** Find the total number of employees.
@@ -283,7 +289,7 @@ Practice:
 
 # 🔵 Level 10 — Self JOIN
 
-Use `manager_id` and `employee_id`.
+> Use `manager_id` and `employee_id`.
 
 **81.** Display employee name and their manager's name.
 
@@ -320,12 +326,16 @@ Combine their results.
 
 # 🔴 Level 12 — Window Functions
 
-Practice:
+### Practice
 
 `RANK()`
+
 `DENSE_RANK()`
+
 `ROW_NUMBER()`
+
 `PARTITION BY`
+
 `OVER()`
 
 **92.** Rank all employees according to salary.
@@ -346,11 +356,14 @@ Practice:
 
 # 🔴 Level 13 — Set Operations
 
-Practice:
+### Practice
 
 `UNION`
+
 `UNION ALL`
+
 `INTERSECT`
+
 `EXCEPT`
 
 **99.** Get the cities containing IT employees and Finance employees using `UNION`.
@@ -385,7 +398,7 @@ for employees earning more than `50000`.
 
 # 🔴 Level 15 — Advanced Mixed Questions
 
-These are closer to **review/practical-test level**.
+> These are closer to **review/practical-test level**.
 
 **107.** Find the highest-paid employee from each department.
 
@@ -423,144 +436,147 @@ salary_difference
 
 **120.** Find employees who have a higher performance score than the average performance score of their department.
 
-# Level 14 — Stored Procedures
+---
 
-121. Create a stored procedure that accepts a department name and displays all employees in that department.
+# 🔴 Level 16 — Stored Procedures
 
-122. Create a stored procedure that accepts an employee ID and updates that employee's salary.
+**121.** Create a stored procedure that accepts a department name and displays all employees in that department.
 
-123. Create a stored procedure that accepts a minimum salary and displays employees earning more than that amount.
+**122.** Create a stored procedure that accepts an employee ID and updates that employee's salary.
 
-124. Create a stored procedure using `IF / ELSE` to classify an employee based on their salary.
+**123.** Create a stored procedure that accepts a minimum salary and displays employees earning more than that amount.
 
-125. Create a stored procedure that performs multiple employee-related operations inside a transaction.
+**124.** Create a stored procedure using `IF / ELSE` to classify an employee based on their salary.
+
+**125.** Create a stored procedure that performs multiple employee-related operations inside a transaction.
 
 ---
 
-# Level 15 — User-Defined Functions (UDF)
+# 🔴 Level 17 — User-Defined Functions (UDF)
 
-126. Create a function that accepts an employee ID and returns the employee's salary.
+**126.** Create a function that accepts an employee ID and returns the employee's salary.
 
-127. Create a function that accepts a salary and returns the annual salary.
+**127.** Create a function that accepts a salary and returns the annual salary.
 
-128. Create a function that accepts a department name and returns the average salary of that department.
+**128.** Create a function that accepts a department name and returns the average salary of that department.
 
-129. Create a function that accepts an employee ID and returns the employee's salary category:
+**129.** Create a function that accepts an employee ID and returns the employee's salary category:
 
 * Low
 * Medium
 * High
 
-130. Create a function that accepts an employee ID and returns the employee's salary rank within their department.
+**130.** Create a function that accepts an employee ID and returns the employee's salary rank within their department.
 
 ---
 
-# Level 16 — Triggers
+# 🔴 Level 18 — Triggers
 
-131. Create a trigger that automatically records an employee's salary before it is updated.
+**131.** Create a trigger that automatically records an employee's salary before it is updated.
 
-132. Create a trigger that automatically records deleted employees in an archive table.
+**132.** Create a trigger that automatically records deleted employees in an archive table.
 
-133. Create a trigger that automatically sets `created_at` when a new employee is inserted.
+**133.** Create a trigger that automatically sets `created_at` when a new employee is inserted.
 
-134. Create a trigger that prevents an employee's salary from being updated to a negative value.
+**134.** Create a trigger that prevents an employee's salary from being updated to a negative value.
 
-135. Create a trigger that records every `INSERT`, `UPDATE`, and `DELETE` operation performed on the `Employees` table.
-
----
-# Level 18 — Python + SQL Integration
-
-141. Connect Python to PostgreSQL and retrieve all employees.
-
-142. Create a Python program that inserts a new employee into the database.
-
-143. Create a Python program that updates an employee's salary using their employee ID.
-
-144. Create a Python program that accepts a department name and displays all employees in that department.
-
-145. Create a Python program that performs CRUD operations on the `Employees` table.
+**135.** Create a trigger that records every `INSERT`, `UPDATE`, and `DELETE` operation performed on the `Employees` table.
 
 ---
 
-# Level 19 — ODBC
+# 🔴 Level 19 — Python + SQL Integration
 
-146. Establish an ODBC connection between Python and PostgreSQL.
+**141.** Connect Python to PostgreSQL and retrieve all employees.
 
-147. Execute a parameterized SELECT query using an ODBC cursor.
+**142.** Create a Python program that inserts a new employee into the database.
 
-148. Insert and update employee records using ODBC.
+**143.** Create a Python program that updates an employee's salary using their employee ID.
 
-149. Perform a transaction using ODBC and roll back the transaction when an error occurs.
+**144.** Create a Python program that accepts a department name and displays all employees in that department.
 
-150. Execute a stored procedure from Python using ODBC and display the result.
-
----
-
-# Level 20 — Database Administration
-
-151. Create a database role with read-only access to the `Employees` table.
-
-152. Create a role with permission to perform `SELECT`, `INSERT`, `UPDATE`, and `DELETE`.
-
-153. Grant a permission to a role and then revoke the permission.
-
-154. Create different roles for Administrator, Developer, and Read-only users and assign appropriate privileges.
-
-155. Create a database backup and restore the database from that backup.
+**145.** Create a Python program that performs CRUD operations on the `Employees` table.
 
 ---
 
-# Level 21 — Indexing & Performance Optimization
+# 🔴 Level 20 — ODBC
 
-156. Create an index on the `salary` column and analyze its purpose.
+**146.** Establish an ODBC connection between Python and PostgreSQL.
 
-157. Create a composite index using two commonly filtered columns.
+**147.** Execute a parameterized SELECT query using an ODBC cursor.
 
-158. Use `EXPLAIN` to inspect the execution plan of an employee query.
+**148.** Insert and update employee records using ODBC.
 
-159. Use `EXPLAIN ANALYZE` to compare a query before and after creating an index.
+**149.** Perform a transaction using ODBC and roll back the transaction when an error occurs.
 
-160. Optimize a query containing multiple JOINs, filtering, grouping, and ordering.
-
----
-
-# Level 22 — Denormalization
-
-161. Identify a query that requires multiple JOINs and determine whether denormalization could simplify the query.
-
-162. Create a denormalized employee reporting table containing employee and department information together.
-
-163. Insert data into the denormalized reporting table and compare it with the normalized tables.
-
-164. Update the denormalized data when the original department information changes.
-
-165. Compare the query performance of the normalized design and denormalized reporting table.
+**150.** Execute a stored procedure from Python using ODBC and display the result.
 
 ---
 
-# Level 23 — Database Design & ER Diagram
+# 🔴 Level 21 — Database Administration
 
-166. Identify the entities, attributes, and relationships required for a School Management System.
+**151.** Create a database role with read-only access to the `Employees` table.
 
-167. Design tables for Students, Teachers, Courses, Departments, Enrollments, Exams, and Marks.
+**152.** Create a role with permission to perform `SELECT`, `INSERT`, `UPDATE`, and `DELETE`.
 
-168. Identify all primary keys, foreign keys, and many-to-many relationships.
+**153.** Grant a permission to a role and then revoke the permission.
 
-169. Normalize the School Management System database up to 3NF.
+**154.** Create different roles for Administrator, Developer, and Read-only users and assign appropriate privileges.
 
-170. Create an ER diagram showing entities, attributes, relationships, and cardinality.
+**155.** Create a database backup and restore the database from that backup.
 
 ---
 
-# Level 24 — Final Advanced SQL Challenges
+# 🔴 Level 22 — Indexing & Performance Optimization
 
-171. Find the top 3 highest-paid employees from every department using a CTE and window function.
+**156.** Create an index on the `salary` column and analyze its purpose.
 
-172. Find employees whose salary is greater than their department's average salary.
+**157.** Create a composite index using two commonly filtered columns.
 
-173. Find departments whose average salary is greater than the company-wide average salary.
+**158.** Use `EXPLAIN` to inspect the execution plan of an employee query.
 
-174. Create a department-wise salary report containing:
+**159.** Use `EXPLAIN ANALYZE` to compare a query before and after creating an index.
+
+**160.** Optimize a query containing multiple JOINs, filtering, grouping, and ordering.
+
+---
+
+# 🔴 Level 23 — Denormalization
+
+**161.** Identify a query that requires multiple JOINs and determine whether denormalization could simplify the query.
+
+**162.** Create a denormalized employee reporting table containing employee and department information together.
+
+**163.** Insert data into the denormalized reporting table and compare it with the normalized tables.
+
+**164.** Update the denormalized data when the original department information changes.
+
+**165.** Compare the query performance of the normalized design and denormalized reporting table.
+
+---
+
+# 🔴 Level 24 — Database Design & ER Diagram
+
+**166.** Identify the entities, attributes, and relationships required for a School Management System.
+
+**167.** Design tables for Students, Teachers, Courses, Departments, Enrollments, Exams, and Marks.
+
+**168.** Identify all primary keys, foreign keys, and many-to-many relationships.
+
+**169.** Normalize the School Management System database up to 3NF.
+
+**170.** Create an ER diagram showing entities, attributes, relationships, and cardinality.
+
+---
+
+# 🔴 Level 25 — Final Advanced SQL Challenges
+
+**171.** Find the top 3 highest-paid employees from every department using a CTE and window function.
+
+**172.** Find employees whose salary is greater than their department's average salary.
+
+**173.** Find departments whose average salary is greater than the company-wide average salary.
+
+**174.** Create a department-wise salary report containing:
 
 * Employee count
 * Total salary
@@ -568,15 +584,15 @@ salary_difference
 * Minimum salary
 * Maximum salary
 
-175. Find the second-highest salary in every department.
+**175.** Find the second-highest salary in every department.
 
 ---
 
-# Level 25 — Final Database Project — School Management System
+# 🔴 Level 26 — Final Database Project — School Management System
 
-176. Design and implement a normalized School Management System database with appropriate primary keys, foreign keys, and relationships.
+**176.** Design and implement a normalized School Management System database with appropriate primary keys, foreign keys, and relationships.
 
-177. Implement practical queries using:
+**177.** Implement practical queries using:
 
 * JOINs
 * Subqueries
@@ -584,19 +600,24 @@ salary_difference
 * Window Functions
 * Set Operations
 
-178. Implement database structures using:
+**178.** Implement database structures using:
 
 * Views
 * UDFs
 * Stored Procedures
 * Triggers
 
-179. Implement database administration and optimization using:
+**179.** Implement database administration and optimization using:
 
 * Roles & Permissions
 * Indexes
 * Transactions
 * `EXPLAIN ANALYZE`
 
-180. Connect the School Management System with Python using ODBC and build a practical reporting/CRUD application.
-OUP BY → HAVING → CASE → Functions → Dates → Subqueries → Self JOIN → CTE → Window Functions → Set Operations → Views → Advanced Mixed Queries.**
+**180.** Connect the School Management System with Python using ODBC and build a practical reporting/CRUD application.
+
+---
+
+## SQL Practical Progression
+
+**SELECT → WHERE → AND / OR / NOT → BETWEEN / IN / LIKE → ORDER BY → LIMIT / OFFSET → Aggregate Functions → GROUP BY → HAVING → CASE → String & NULL Functions → Date Functions → Subqueries → Self JOIN → CTE → Window Functions → Set Operations → Views → Advanced Mixed Questions → Stored Procedures → UDF → Triggers → Python + SQL → ODBC → Database Administration → Indexing & Performance Optimization → Denormalization → Database Design & ER Diagram → Final Advanced SQL Challenges → Final Database Project**
