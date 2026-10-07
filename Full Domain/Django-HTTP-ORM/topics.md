@@ -1,11 +1,3 @@
-Yes. If the scope is strictly **Django + HTTP + Django ORM**, then we should remove all DRF/API-specific topics and keep the supporting concepts that are actually connected to those three areas.
-
-I also checked the list for gaps: **HTTP concepts needed to understand Django request/response, Django concepts needed to work with ORM, and ORM-related database concepts** should all remain.
-
-# Django + HTTP + Django ORM — Final Master Topic List
-
----
-
 # 1. HTTP — Foundation for Django ⭐⭐⭐⭐⭐
 
 ## HTTP Fundamentals
