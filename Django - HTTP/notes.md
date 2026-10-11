@@ -1,4 +1,4 @@
-# 📚 FINAL NOTION NOTE — DJANGO + HTTP
+# 📚 NOTE — DJANGO + HTTP
 
 > 🎯 **Goal:** Understand how HTTP and Django work together from the moment a user enters a URL until the browser displays the final page.
 > 
